@@ -35,6 +35,7 @@ class WeatherApp extends StatelessWidget
         primarySwatch: BlocProvider.of<WeatherCubit>(context).weatherModel == null ?  Colors.blue : BlocProvider.of<WeatherCubit>(context).weatherModel!.getThemeColor(),
         ),
         home: HomePage(),
+        debugShowCheckedModeBanner: false,
       ),
     );
   }
