@@ -18,7 +18,10 @@ class HomePage extends StatelessWidget
     return Scaffold(
       appBar: AppBar(actions: [IconButton(onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context) {return SearchPage();}));},
             icon:  const Icon(Icons.search),),],
-        title:  const Text('Weather App'),),
+        title:  const Text('Weather App'),
+        backgroundColor: Colors.orange,
+        elevation: 1.9,
+        ),
 
         body: BlocBuilder<WeatherCubit, WeatherStates>(builder: (context, state)
         {
